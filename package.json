@@ -3,9 +3,30 @@
     "@google/genai": "^1.48.0",
     "@langchain/core": "^1.1.19",
     "@langchain/google-genai": "^2.1.15",
-    "@pinecone-database/pinecone": "^7.0.0",
+    "@pinecone-database/pinecone": "^5.1.2",
     "dotenv": "^17.4.1",
     "neo4j-driver": "^6.0.1",
     "pdf-parse": "^2.4.5"
-  }
+  },
+  "name": "lecture18",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "type": "module",
+  "scripts": {
+    "test": "node testConnection.js",
+    "index": "node indexing.js",
+    "query": "node runQuery.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaibhav-Pandey7/graph-rag-movie-recommender.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vaibhav-Pandey7/graph-rag-movie-recommender/issues"
+  },
+  "homepage": "https://github.com/Vaibhav-Pandey7/graph-rag-movie-recommender#readme"
 }
