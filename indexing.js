@@ -1,7 +1,7 @@
-import { extractAllEntities } from "entityExtractor.js";
-import { buildGraph } from "graphBuilder.js";
-import { buildVectorStore } from "vectorStore.js";
-import { closeConnections } from "config.js";
+import { extractAllEntities } from "./entityExtractor.js";
+import { buildGraph } from "./graphBuilder.js";
+import { buildVectorStore } from "./vectorStore.js";
+import { closeConnections } from "./config.js";
 
 async function runIndexing(pdfPath) {
   console.log("===========================================");
@@ -17,9 +17,9 @@ async function runIndexing(pdfPath) {
     console.log("── STEP 1: Extracting Entities (Gemini + PDF Upload) ──");
     const entities = await extractAllEntities(pdfPath);
 
-    // ── STEP 2: Build Neo4j Graph ──
-    console.log("\n── STEP 2: Building Graph (Neo4j) ──");
-    await buildGraph(entities);
+    // // ── STEP 2: Build Neo4j Graph ──
+    // console.log("\n── STEP 2: Building Graph (Neo4j) ──");
+    // await buildGraph(entities);
 
     // ── STEP 3: Build Vector Store ──
     console.log("\n── STEP 3: Building Vector Store (Pinecone) ──");

@@ -23,7 +23,7 @@
 //   With index    → MERGE uses lookup table (fast)
 // =====================================================================
 
-import { driver } from "./2_config.js";
+import { driver } from "./config.js";
 
 // Insert ONE movie's entities and relationships
 async function insertMovieGraph(entity) {

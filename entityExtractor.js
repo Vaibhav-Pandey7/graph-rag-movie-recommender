@@ -11,7 +11,7 @@
 //   - Final summary shows exactly which movies were lost (if any)
 // =====================================================================
 
-import { genai } from "./2_config.js";
+import { genai } from "./config.js";
 import { createPartFromUri } from "@google/genai";
 
 const EXTRACTION_PROMPT = `You are a precise entity extractor for a movie knowledge graph.
