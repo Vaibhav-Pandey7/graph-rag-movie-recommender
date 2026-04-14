@@ -16,7 +16,7 @@
 
 import fs from "fs";
 import pdf from "pdf-parse/lib/pdf-parse.js";
-import { embedText, pineconeIndex } from "./2_config.js";
+import { embedText, pineconeIndex } from "./config.js";
 
 // ── Constants ──
 const EMBED_CONCURRENCY = 5;
