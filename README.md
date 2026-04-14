@@ -35,8 +35,8 @@ Pinecone is great at finding "vibes"; Neo4j is great at finding "facts". When as
 
 ***1. Clone the repository:***
 ```bash
-git clone <your-repo-url>
-cd <your-folder-name>
+git clone https://github.com/Vaibhav-Pandey7/graph-rag-movie-recommender.git
+cd graph-rag-movie-recommender
 ```
 
 ***2. Install Dependencies:***
