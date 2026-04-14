@@ -33,38 +33,46 @@ Pinecone is great at finding "vibes"; Neo4j is great at finding "facts". When as
 
 ## 🚀 Installation & Setup
 
-1. Clone the repository:
+***1. Clone the repository:***
+```bash
 git clone <your-repo-url>
 cd <your-folder-name>
+```
 
-2. Install Dependencies:
+***2. Install Dependencies:***
+```bash
 npm install
+```
 
-3. Environment Variables:
+***3. Environment Variables:***
 Create a .env file in the root directory of your project and add your credentials:
 
+```bash
 NEO4J_URI=bolt://localhost:7687  
 NEO4J_USER=neo4j  
 NEO4J_PASSWORD=your_password  
 PINECONE_API_KEY=your_pinecone_key  
 PINECONE_INDEX=your_index_name  
 GEMINI_API_KEY=your_gemini_key  
+```
 
 ## 💻 Live Execution Examples
 
 To start the agent and enter the interactive terminal, run:
+```bash
 npm run query
+```
 
-The system dynamically routes your questions based on intent:
+***The system dynamically routes your questions based on intent:***
 
-1. Factual Aggregation (Graph Traversal)
+***1. Factual Aggregation (Graph Traversal)***
 User: "How many movies did Christopher Nolan direct?"
 Engine: Routes to Neo4j -> Generates safe Cypher via templates -> Returns exact count.
 
-2. Hybrid Recommendation (Vector Search + Graph Filtering)
+***2. Hybrid Recommendation (Vector Search + Graph Filtering)***
 User: "I want to watch a movie similar to Inception."
 Engine: Identifies anchor -> Pinecone finds 50 candidates -> Neo4j filters by shared genres/themes -> LLM ranks the top 10.
 
-3. Vibe Search (Pure Vector Fallback)
+***3. Vibe Search (Pure Vector Fallback)***
 User: "Show me movies with a dark, cyberpunk vibe."
 Engine: Concept unresolved in Graph -> Safely falls back to Pinecone semantic search -> Returns contextual recommendations.
