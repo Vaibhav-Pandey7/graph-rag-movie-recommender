@@ -43,12 +43,12 @@ npm install
 3. Environment Variables:
 Create a .env file in the root directory of your project and add your credentials:
 
-NEO4J_URI=bolt://localhost:7687
-NEO4J_USER=neo4j
-NEO4J_PASSWORD=your_password
-PINECONE_API_KEY=your_pinecone_key
-PINECONE_INDEX=your_index_name
-GEMINI_API_KEY=your_gemini_key
+NEO4J_URI=bolt://localhost:7687  
+NEO4J_USER=neo4j  
+NEO4J_PASSWORD=your_password  
+PINECONE_API_KEY=your_pinecone_key  
+PINECONE_INDEX=your_index_name  
+GEMINI_API_KEY=your_gemini_key  
 
 ## 💻 Live Execution Examples
 
